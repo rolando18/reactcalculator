@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins';
+  background-color: #262626;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-wrapper {
+  width: 530px;
+  height: 550px;
+  background: linear-gradient(180deg, #3E2541 0%, #9739A3 100%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  max-height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen input{
+  width: 90%;
+  margin: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+}
+
+.screen .expression{
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.screen .screen-results{
+  text-align: right;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 0;
+}
+
+.button-wrapper{
+  width: 530px;
+  height: 430px;
+  background: linear-gradient(227.33deg, #3F1A43 13.18%, rgba(50, 30, 52, 0) 94.5%);
+}
+
+.btn{
+  width: 132.5px;
+  height: 86px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: rgba(50, 30, 52, 0.5);;
+}
+
+.eq {
+  background: linear-gradient(125.37deg, #FB8B24 -23.44%, rgba(251, 139, 36, 0) 117.82%);
+}
+
+.eq:hover{
+  background: #FB8B24;
+}
+
+.footer {
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  padding:10px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  font-weight: 600;
 }
